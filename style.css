@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image {
+    width: 20vmax;
+    height: 25vmax;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.image[data-status="inactive"] {
+    display: none;
+}
+
+.image[data-status="active"] {
+    display: block;
+}
